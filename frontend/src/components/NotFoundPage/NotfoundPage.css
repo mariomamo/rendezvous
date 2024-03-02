@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,500');
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error_box {
+    height: auto;
+    width: 600px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+.error_box *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.error_box h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+#container {
+    min-height: 100vh;
+    min-width: 100vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .number {
+        font-size: 4rem;
+        font-weight: 500;
+        
+        + .text {
+            margin: 0 0 1rem;
+        }
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width:700px) {
+    .error_box {
+        width: 90%;
+    }
+}
